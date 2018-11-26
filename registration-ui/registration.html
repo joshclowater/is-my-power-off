@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>IsMyPowerOff</title>
+		<link rel="icon" type="image/png" href="images/power-icon.png" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/loader.css">
+	</head>
+	<body style="width: 90%; margin-left: 5%;">
+		<div id="errors" style="color: red;"></div>
+		<div id="submitting-registration" class="spinner" style="display: none;">
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+			<div class="rect4"></div>
+			<div class="rect5"></div>
+			Submitting registration
+		</div>
+		<form id="registration-form">
+			<h3>Power Supplier Information</h3>
+		    <div class="form-group">
+		        <label for="powerSupplier">Power Supplier</label>
+		        <select class="form-control" name="powerSupplier">
+		        	<option value=""></option>
+		        	<option value="NB_POWER">NB Power</option>
+		        </select>
+		    </div>
+		    <div id="nb-power-form" style="display: none;">
+			    <h5>Enter NB Power Account Number and/or Account Phone Number to receive notifications for</h5>
+			    <div class="form-group">
+			        <label for="accountPhoneNumber">Account Phone Number</label>
+			        <input type="text" class="form-control" name="accountPhoneNumber" placeholder="Account Phone Number (ex. 5064501234)">
+			    </div>
+			    <div class="form-group">
+			        <label for="accountNumber">Account Number</label>
+			        <input type="text" class="form-control" name="accountNumber" placeholder="Account Number (ex. 12345678)">
+			    </div>
+		    </div>
+		    <h3>IsMyPowerOff Account Registration</h3>
+		    <div class="form-group">
+		        <label for="email">Email</label>
+		        <input type="email" class="form-control" name="email" placeholder="Email">
+		    </div>
+		    <div class="form-group">
+		        <label for="confirmEmail">Confirm Email</label>
+		        <input type="email" class="form-control" name="confirmEmail" placeholder="Confirm Email">
+		    </div>
+		    <button type="submit" class="btn btn-primary">Register</button>
+		</form>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+	<script src="js/index.js"></script>
+</html>

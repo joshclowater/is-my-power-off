@@ -43,6 +43,9 @@ const checkPower = ({ powerAccountId, email, accountNumber, accountPhoneNumber, 
       } else if (html.includes('The information provided does not match our records. Please try again.')) {
         console.error('[ERROR] Invalid account', email, accountNumber || accountPhoneNumber);
         return;
+      } else if (html.includes('unavailable due to system maintenance')) {
+        console.warn('[WARN] Outage management system unavailable due to system maintenence.');
+        return;
       } else {
         powerIsOn = false;
       }

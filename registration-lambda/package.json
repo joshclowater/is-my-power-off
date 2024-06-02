@@ -2,15 +2,8 @@
   "name": "registration-lambda",
   "version": "1.0.0",
   "description": "A lambda function to register an IsMyPowerOff account",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [
-    "lambda"
-  ],
+  "main": "index.mjs",
   "author": "Josh Clowater",
   "license": "ISC",
-  "dependencies": {
-    "request": "^2.88.0",
-    "request-promise": "^4.2.2"
-  }
+  "dependencies": {}
 }

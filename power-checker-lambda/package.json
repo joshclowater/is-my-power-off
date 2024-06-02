@@ -2,15 +2,8 @@
   "name": "power-checker-lambda",
   "version": "1.0.0",
   "description": "A lambda function to check is the power is off and send an email when the status changes",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [
-    "lambda",
-    "email"
-  ],
+  "main": "index.mjs",
   "author": "Josh Clowater",
   "license": "ISC",
-  "dependencies": {
-    "request": "^2.88.0"
-  }
+  "dependencies": {}
 }
